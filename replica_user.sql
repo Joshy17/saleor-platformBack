@@ -1,5 +1,6 @@
 -- Script being executed on DB init, creates read only user
 -- for replicas purposes.
+-- Hola
 CREATE USER saleor_read_only WITH PASSWORD 'saleor';
 GRANT CONNECT ON DATABASE saleor TO saleor_read_only;
 GRANT USAGE ON SCHEMA public TO saleor_read_only;
